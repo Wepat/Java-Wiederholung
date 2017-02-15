@@ -2,14 +2,16 @@ package app;
 
 import java.awt.Color;
 
-import kapitel_5.Kleidung;
-import kapitel_5.Socke;
-import kapitel_5.Waescheleine;
+import kapitel_2.Eingabedialog;
+import kapitel_2.Mathematische_Funktionen;
+import kapitel_5_2.Kleidung;
+import kapitel_5_2.Socke;
+import kapitel_5_2.Waescheleine;
 
 public class App {
 
 	public static void main(String[] args) {
-		Socke s1 = new Socke("rot");
+	/**	Socke s1 = new Socke("rot");
 		Socke s2 = new Socke(Color.blue);
 		Kleidung s3 = new Socke();
 		Kleidung s4 = new Socke("grün");
@@ -41,6 +43,16 @@ public class App {
 		System.out.println(s3.toString());
 		System.out.println(s4.toString());
 		System.out.println(s5.toString());
+		
+		Mathematische_Funktionen mf = new Mathematische_Funktionen();
+		System.out.println(mf.getMin(5, 3, 4));
+		
+		**/
+		Eingabedialog eingabe = new Eingabedialog();
+		String s = javax.swing.JOptionPane.showInputDialog("Bitte eine Zahl eingaben");
+		
+		System.out.println(eingabe.formatiereOutput(Integer.parseInt(s)));
+		System.out.println(eingabe.getQuadratwurzel(Integer.parseInt(s)));
 	}
 
 }

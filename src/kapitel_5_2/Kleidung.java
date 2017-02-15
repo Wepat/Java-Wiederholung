@@ -1,4 +1,4 @@
-package kapitel_5;
+package kapitel_5_2;
 
 import interfaces.Waschbar;
 
